@@ -1,4 +1,4 @@
-package com.invertase.rnfirebasestarter;
+package com.isracard.isracardproject;
 
 import android.app.Application;
 

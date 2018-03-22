@@ -20,14 +20,14 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Image source={require('./assets/RNFirebase512x512.png')} style={[styles.logo]} />
         <Text style={styles.welcome}>
-          Welcome to the React Native{'\n'}Firebase starter project!
+          Welcome to the React Native{'\n'}Amichay starter project!   
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit App.js
+          AMI GAGSTA APP
         </Text>
         {Platform.OS === 'ios' ? (
           <Text style={styles.instructions}>
-            Press Cmd+R to reload,{'\n'}
+            Press Cmd+R to reload,{'\n'}  
             Cmd+D or shake for dev menu
           </Text>
         ) : (

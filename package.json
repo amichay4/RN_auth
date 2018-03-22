@@ -1,5 +1,5 @@
 {
-  "name": "RNFirebaseStarter",
+  "name": "isracardproject",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -11,7 +11,7 @@
     "replace-in-file": "^3.0.0"
   },
   "scripts": {
-    "android": "react-native run-android",
+    "android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android",
     "ios": "react-native run-ios",
     "rename": "node ./bin/rename.js",
     "start": "react-native start",
