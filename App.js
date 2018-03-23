@@ -18,7 +18,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image source={require('./assets/RNFirebase512x512.png')} style={[styles.logo]} />
+        {/* <Image source={require('./assets/RNFirebase512x512.png')} style={[styles.logo]} /> */}
         <Text style={styles.welcome}>
           Welcome to the React Native{'\n'}Amichay starter project!   
         </Text>
