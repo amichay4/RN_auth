@@ -3,6 +3,7 @@ package com.isracard.isracardproject;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
 import com.facebook.react.ReactNativeHost;
@@ -37,6 +38,7 @@ public class MainApplication extends Application implements ReactApplication {
 
   protected static CallbackManager getCallbackManager() {
     return mCallbackManager;
+  }
 
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
     @Override
@@ -48,8 +50,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
-            new VectorIconsPackage(),
-        new FBSDKPackage(mCallbackManager),
+            new FBSDKPackage(),
         new RNGoogleSigninPackage(),
         new RNFirebasePackage(),
         // add/remove these packages as appropriate
@@ -63,7 +64,9 @@ public class MainApplication extends Application implements ReactApplication {
         new RNFirebaseMessagingPackage(),
         new RNFirebasePerformancePackage(),
         new RNFirebaseStoragePackage(),
-        new RNFirebaseCrashlyticsPackage()
+        new RNFirebaseCrashlyticsPackage(),
+        new FBSDKPackage(mCallbackManager),
+        new VectorIconsPackage(),
       );
     }
     
@@ -81,6 +84,7 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     super.onCreate();
+    AppEventsLogger.activateApp(this);
     SoLoader.init(this, /* native exopackage */ false);
   }
 }
