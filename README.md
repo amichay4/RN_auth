@@ -1,6 +1,3 @@
-copy the debug.keystore file from the project and place it in your machine insted of your debug.keystore.exe 
-(keep it and afterwords replace it back)
-The location of debug.keystore.exe is typically in your .android directory present inside home directory
 
 #### 1) Clone & Install Dependencies
 
