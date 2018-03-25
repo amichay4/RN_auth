@@ -5,5 +5,5 @@
 - 1.2) `cd RN_auth` - cd into your newly created project directory.
 - 1.3) Install NPM packages with your package manager of choice - i.e run `yarn` or `npm install`
 - 1.5) **[Android]**: copy the  given debug.keystore file and place it in your machine insted of your debug.keystore 
-       (keep it and afterwards replace it back).
+       (keep it and afterwards replace it back)
        The location of debug.keystore is typically in your .android directory present inside home directory.
