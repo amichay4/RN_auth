@@ -4,7 +4,7 @@ import android.app.Application;
 
 import com.facebook.react.ReactApplication;
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
-import com.oblador.vectoricons.VectorIconsPackage;
+// import com.oblador.vectoricons.VectorIconsPackage; ??
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -27,7 +27,7 @@ import io.invertase.firebase.firestore.RNFirebaseFirestorePackage; // Firebase F
 import io.invertase.firebase.messaging.RNFirebaseMessagingPackage; // Firebase Cloud Messaging
 import io.invertase.firebase.perf.RNFirebasePerformancePackage; // Firebase Performance
 import io.invertase.firebase.storage.RNFirebaseStoragePackage; // Firebase Storage
-import io.invertase.firebase.fabric.crashlytics.RNFirebaseCrashlyticsPackage; // Crashlytics
+
 
 import java.util.Arrays;
 import java.util.List;
@@ -50,7 +50,6 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
-            new FBSDKPackage(),
         new RNGoogleSigninPackage(),
         new RNFirebasePackage(),
         // add/remove these packages as appropriate
@@ -64,9 +63,8 @@ public class MainApplication extends Application implements ReactApplication {
         new RNFirebaseMessagingPackage(),
         new RNFirebasePerformancePackage(),
         new RNFirebaseStoragePackage(),
-        new RNFirebaseCrashlyticsPackage(),
-        new FBSDKPackage(mCallbackManager),
-        new VectorIconsPackage(),
+        new FBSDKPackage(mCallbackManager)
+        // new VectorIconsPackage() -??? way not find??
       );
     }
     
